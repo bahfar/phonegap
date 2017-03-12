@@ -2,9 +2,9 @@
 <widget id="com.expressionlab.bahgatfarms" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>BahgatFarms</name>
     <description>
-        A blank PhoneGap app.
+        The officila mobile app of Bahgat Farms.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
+    <author email="app@expressionlab.com" href="http://www.expressionlab.com">
         PhoneGap Team
     </author>
     <content src="index.html" />
