@@ -2,11 +2,11 @@
 <widget id="com.expressionlab.bahgatfarms" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>BahgatFarms</name>
     <description>
-        The officila mobile app of Bahgat Farms.
+        The official mobile app of Bahgat Farms.
     </description>
     <author email="app@expressionlab.com" href="http://www.expressionlab.com">
-        PhoneGap Team
+        ExpressionLab
     </author>
     <content src="index.html" />
-    <access origin="*" />
+    <access origin="https://shopmate.bahgatfarms.com" />
 </widget>
