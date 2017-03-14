@@ -9,6 +9,7 @@
     </author>
     <content src="index.html" />
     <access origin="https://shopmate.bahgatfarms.com" />
+    <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.7.0" />
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
