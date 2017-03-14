@@ -9,6 +9,9 @@
     "installed_plugins": {
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.expressionlab.bahgatfarms"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.expressionlab.bahgatfarms"
         }
     },
     "dependent_plugins": {},
@@ -30,6 +33,7 @@
         }
     ],
     "plugin_metadata": {
-        "cordova-plugin-inappbrowser": "1.7.0"
+        "cordova-plugin-inappbrowser": "1.7.0",
+        "cordova-plugin-whitelist": "1.3.2"
     }
 }
