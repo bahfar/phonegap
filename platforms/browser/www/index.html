@@ -6,12 +6,22 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>BahgatFarms</title>
+        <style>
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+        }
+        </style>
     </head>
     <body>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             app.initialize();
-        </script>
+        </script> -->
+        <div id="loading"><img src="img/loading.gif" /></div>
     </body>
 </html>
