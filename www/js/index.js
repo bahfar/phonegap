@@ -21,10 +21,6 @@
 //     receivedEvent: function(id) {
 //         // console.log('Received Event: ' + id);
 //         $('#status-message').text("loading please wait ...");
-//         var inAppBrowserRef = cordova.InAppBrowser.open('https://shopmate.bahgatfarms.com/categories', '_blank', 'location=no');
-//         inAppBrowserRef.addEventListener('loadstart', this.loadStartCallBack);
-//         inAppBrowserRef.addEventListener('loadstop', this.loadStopCallBack);
-//         inAppBrowserRef.addEventListener('loaderror', this.loadErrorCallBack);
 //     },
 //
 //     loadStartCallBack: function () {
@@ -37,54 +33,31 @@ document.addEventListener("deviceready", onDeviceReady, false);
 var inAppBrowserRef;
 
 function onDeviceReady() {
+    // navigator.splashscreen.show();
     var url = "https://shopmate.bahgatfarms.com/categories";
     var target = "_blank";
-    var options = "location=no,hidden=yes";
+    var options = "location=no,toolbar=no,hidden=yes";
     inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
     inAppBrowserRef.addEventListener('loadstart', loadStartCallBack);
     inAppBrowserRef.addEventListener('loadstop', loadStopCallBack);
     inAppBrowserRef.addEventListener('loaderror', loadErrorCallBack);
+    // window.location.href = "https://shopmate.bahgatfarms.com/categories";
 }
 
-// var inAppBrowserRef;
-// function showHelp(url) {
-//     var target = "_blank";
-//     var options = "location=yes,hidden=yes";
-//     inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
-//     inAppBrowserRef.addEventListener('loadstart', loadStartCallBack);
-//     inAppBrowserRef.addEventListener('loadstop', loadStopCallBack);
-//     inAppBrowserRef.addEventListener('loaderror', loadErrorCallBack);
-// }
-
 function loadStartCallBack() {
-    // $('#status-message').text("loading please wait ...");
-    // document.getElementById("status").innerText = "Loading ...";
-    // document.getElementById("loading").style.display = "block";
+  setTimeout(function() {
+    document.getElementById("logo").style.display = "none";
+    document.getElementById("loading").style.display = "block";
+  }, 2000);
 }
 
 function loadStopCallBack() {
     if (inAppBrowserRef != undefined) {
-        // inAppBrowserRef.insertCSS({ code: "body{font-size: 25px;" });
-        // $('#status-message').text("");
-        // inAppBrowserRef.show();
-        // document.getElementById("status").innerText = "Done ...";
-        document.getElementById("loading").style.display = "none";
         inAppBrowserRef.show();
+        // navigator.splashscreen.hide();
     }
 }
 
 function loadErrorCallBack(params) {
-    // document.getElementById("status").innerText = "";
-    // var scriptErrorMesssage =
-    //    "alert('Error: " + params.message + "');"
-    // inAppBrowserRef.executeScript({ code: scriptErrorMesssage }, executeScriptCallBack);
     console.log("Error message: " + params.message);
-    inAppBrowserRef.close();
-    inAppBrowserRef = undefined;
 }
-
-// function executeScriptCallBack(params) {
-//     if (params[0] == null) {
-//         console.log("Error message: " + params.message);
-//     }
-// }
