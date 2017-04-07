@@ -8,9 +8,13 @@
         ExpressionLab
     </author>
     <content src="index.html" />
-    <access origin="https://shopmate.bahgatfarms.com" />
-    <plugin name="cordova-plugin-inappbrowser" spec="1.7.0" />
+
     <plugin name="cordova-plugin-whitelist" spec="1.3.2" />
+    <plugin name="cordova-plugin-inappbrowser" spec="1.7.0" />
+
+    <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
+    <splash src="splash.png" />
+
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
@@ -19,6 +23,7 @@
         <icon density="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon.png" />
         <icon density="xxxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon.png" />
     </platform>
+
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
         <icon height="114" platform="ios" src="www/res/icon/ios/icon@2x.png" width="114" />
