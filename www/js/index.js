@@ -34,6 +34,7 @@ var inAppBrowserRef;
 
 function onDeviceReady() {
     // navigator.splashscreen.show();
+    navigator.splashscreen.hide();
     var url = "https://shopmate.bahgatfarms.com/categories";
     var target = "_blank";
     var options = "location=no,toolbar=no,hidden=yes";
