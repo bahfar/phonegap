@@ -48,8 +48,8 @@ function onDeviceReady() {
 function loadStartCallBack() {
   setTimeout(function() {
     document.getElementById("logo").style.display = "none";
-    document.getElementById("loading").style.display = "block";
   }, 2000);
+  document.getElementById("loading").style.display = "block";
 }
 
 function loadStopCallBack() {
