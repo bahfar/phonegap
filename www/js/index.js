@@ -33,7 +33,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 //var inAppBrowserRef;
 
 function onDeviceReady() {
-// navigator.splashscreen.show();
+//  navigator.splashscreen.show();
 //  navigator.splashscreen.hide();
 //  var url = "https://shopmate.bahgatfarms.com/categories";
 //  var target = "_blank";
