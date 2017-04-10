@@ -30,35 +30,35 @@
 
 document.addEventListener("deviceready", onDeviceReady, false);
 
-var inAppBrowserRef;
+//var inAppBrowserRef;
 
 function onDeviceReady() {
-    // navigator.splashscreen.show();
-    navigator.splashscreen.hide();
-    var url = "https://shopmate.bahgatfarms.com/categories";
-    var target = "_blank";
-    var options = "location=no,toolbar=no,hidden=yes";
-    inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
-    inAppBrowserRef.addEventListener('loadstart', loadStartCallBack);
-    inAppBrowserRef.addEventListener('loadstop', loadStopCallBack);
-    inAppBrowserRef.addEventListener('loaderror', loadErrorCallBack);
-    // window.location.href = "https://shopmate.bahgatfarms.com/categories";
+// navigator.splashscreen.show();
+//  navigator.splashscreen.hide();
+//  var url = "https://shopmate.bahgatfarms.com/categories";
+//  var target = "_blank";
+//  var options = "location=no,toolbar=no,hidden=yes";
+//  inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
+//  inAppBrowserRef.addEventListener('loadstart', loadStartCallBack);
+//  inAppBrowserRef.addEventListener('loadstop', loadStopCallBack);
+//  inAppBrowserRef.addEventListener('loaderror', loadErrorCallBack);
+    window.location.href = "https://shopmate.bahgatfarms.com/categories";
 }
 
-function loadStartCallBack() {
-  setTimeout(function() {
-    document.getElementById("logo").style.display = "none";
-  }, 2000);
-  document.getElementById("loading").style.display = "block";
-}
-
-function loadStopCallBack() {
-    if (inAppBrowserRef != undefined) {
-        inAppBrowserRef.show();
-        // navigator.splashscreen.hide();
-    }
-}
-
-function loadErrorCallBack(params) {
-    console.log("Error message: " + params.message);
-}
+//function loadStartCallBack() {
+//  setTimeout(function() {
+//    document.getElementById("logo").style.display = "none";
+//  }, 2000);
+//  document.getElementById("loading").style.display = "block";
+//}
+//
+//function loadStopCallBack() {
+//    if (inAppBrowserRef != undefined) {
+//        inAppBrowserRef.show();
+//        // navigator.splashscreen.hide();
+//    }
+//}
+//
+//function loadErrorCallBack(params) {
+//    console.log("Error message: " + params.message);
+//}
