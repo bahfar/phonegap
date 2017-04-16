@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.expressionlab.bahgatfarms" version="1.3.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.expressionlab.bahgatfarms" version="1.4.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>BahgatFarms</name>
     <description>
         The official mobile app of Bahgat Farms.
@@ -31,6 +31,12 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    
+    <!-- Network -->
+    <plugin name="cordova-plugin-network-information" />
+    
+    <!-- Toast -->
+    <plugin name="cordova-plugin-x-toast" />
 
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />

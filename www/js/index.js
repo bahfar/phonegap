@@ -29,6 +29,8 @@
 // };
 
 document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener("offline", onOffline, false);
+document.addEventListener("online", onOnline, false);
 
 //var inAppBrowserRef;
 
@@ -44,6 +46,25 @@ function onDeviceReady() {
 //  inAppBrowserRef.addEventListener('loaderror', loadErrorCallBack);
 //  window.location.href = "https://shopmate.bahgatfarms.com/categories";
     window.location.replace("https://shopmate.bahgatfarms.com/categories");
+}
+
+function onOffline(){
+    window.plugins.toast.showShortTop('تحقق من اتصالك بالإنترنت');
+    var anchors = document.getElementsByTagName("a");
+    for (var i = 0; i < anchors.length; i++) {
+        anchors[i].onclick = function() {
+            return false;
+        };
+    }
+}
+
+function onOnline(){
+    var anchors = document.getElementsByTagName("a");
+    for (var i = 0; i < anchors.length; i++) {
+        anchors[i].onclick = function() {
+            return true;
+        };
+    }
 }
 
 //function loadStartCallBack() {
