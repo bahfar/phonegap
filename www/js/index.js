@@ -42,7 +42,8 @@ function onDeviceReady() {
 //  inAppBrowserRef.addEventListener('loadstart', loadStartCallBack);
 //  inAppBrowserRef.addEventListener('loadstop', loadStopCallBack);
 //  inAppBrowserRef.addEventListener('loaderror', loadErrorCallBack);
-    window.location.href = "https://shopmate.bahgatfarms.com/categories";
+//  window.location.href = "https://shopmate.bahgatfarms.com/categories";
+    window.location.replace("https://shopmate.bahgatfarms.com/categories");
 }
 
 //function loadStartCallBack() {
