@@ -48,7 +48,8 @@ function onDeviceReady() {
 //  inAppBrowserRef.addEventListener('loadstop', loadStopCallBack);
 //  inAppBrowserRef = cordova.InAppBrowser.open("https://shopmate.bahgatfarms.com/categories", "_blank", "location=no,toolbar=no,hidden=yes");
     
-    window.location.replace("https://shopmate.bahgatfarms.com/categories");
+//  window.location.replace("https://shopmate.bahgatfarms.com/categories");
+    window.location.replace("https://storemate.herokuapp.com/organizations/bahgatfarms/");
 }
 
 function onOffline(){
