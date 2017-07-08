@@ -49,7 +49,8 @@ function onDeviceReady() {
 //  inAppBrowserRef = cordova.InAppBrowser.open("https://shopmate.bahgatfarms.com/categories", "_blank", "location=no,toolbar=no,hidden=yes");
     
 //  window.location.replace("https://shopmate.bahgatfarms.com/categories");
-    window.location.replace("https://storemateapp.com/organizations/bahgatfarms");
+//  window.location.replace("https://storemateapp.com/organizations/bahgatfarms");
+    window.location.replace("https://storemate-hatemmahmoud.c9users.io/organizations/bahgatfarms?platform=app");
 }
 
 function onOffline(){
