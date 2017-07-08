@@ -41,6 +41,7 @@
     <plugin name="cordova-plugin-x-toast" spec="~2.6.0" />
 
     <platform name="android">
+        <preference name="AppendUserAgent" value="android-app" />
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
         <icon density="hdpi" src="www/res/icon/android/drawable-hdpi-icon.png" />
@@ -62,6 +63,7 @@
     </platform>
 
     <platform name="ios">
+        <preference name="AppendUserAgent" value="ios-app" />
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
         <icon height="114" platform="ios" src="www/res/icon/ios/icon@2x.png" width="114" />
         <icon height="40" platform="ios" src="www/res/icon/ios/icon-40.png" width="40" />
