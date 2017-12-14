@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.expressionlab.bahgatfarms" version="2.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>BahgatFarms</name>
+<widget id="com.expressionlab.bahgatfarms-c9" version="2.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>BahgatFarms C9</name>
     <description>
         The official mobile app of Bahgat Farms.
     </description>
