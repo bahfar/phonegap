@@ -24,7 +24,7 @@
     <!-- Whitelist -->
     <plugin name="cordova-plugin-whitelist" spec="1.3.2" />
     <!-- Controls which URLs the WebView itself can be navigated to -->
-    <allow-navigation href="https://storemateapp.com/*" />
+    <allow-navigation href="https://storemate-hatemmahmoud.c9users.io/*" />
     <!-- Controls which network requests (images, XHRs, etc) are allowed to be made (via cordova native hooks) -->
     <access origin="*" />
     <!-- Controls which URLs the app is allowed to ask the system to open (browser, dialer, maps, etc.) -->
